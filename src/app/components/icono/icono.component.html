@@ -1,6 +1,6 @@
 <div class="bg-blue-100 w-96 p-4 rounded-xl shadow-lg mx-auto mt-10">
   <!-- Lista -->
-  <ul id="ul" class="space-y-2 max-h-60 overflow-y-auto p-2 bg-white rounded-md shadow-md">
+  <ul id="ul" class=" max-h-60 overflow-y-auto bg-white rounded-md shadow-md">
     <!-- Los mensajes se agregarán aquí -->
   </ul>
   <!-- Formulario -->
@@ -20,29 +20,3 @@
     </button>
   </div>
 </div>
-<div class="send-whatsapp-container">
-  <h2>Enviar mensaje a WhatsApp</h2>
-  <form (submit)="sendMessage(); $event.preventDefault();">
-    <label for="recipient">Número del destinatario:</label>
-    <input
-      type="text"
-      id="recipient"
-      [(ngModel)]="recipient"
-      name="recipient"
-      placeholder="Ejemplo: 1234567890"
-      required
-    />
-
-    <label for="message">Mensaje:</label>
-    <textarea
-      id="message"
-      [(ngModel)]="message"
-      name="message"
-      placeholder="Escribe tu mensaje aquí"
-      required
-    ></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</div>
-

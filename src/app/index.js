@@ -3,7 +3,7 @@ const socket = io('wss://bot-node-7htf.onrender.com');
 socket.on('message', (text) => {
   // Crear elemento para el mensaje del bot
   const botMessage = document.createElement('li');
-  botMessage.className = 'text-blue-500'; // Color del texto del bot
+  botMessage.className = 'text-blue-500 p-2 text-left rounded-md bg-red-100 m-2'; // Color del texto del bot
   botMessage.innerHTML = text;
 
   // Agregar el mensaje del bot a la lista
@@ -23,7 +23,7 @@ document.getElementById('enviar').onclick = () => {
 
   // Crear elemento para el mensaje del usuario
   const userMessage = document.createElement('li');
-  userMessage.className = 'text-gray-800'; // Color del texto del usuario
+  userMessage.className = 'text-gray-800 p-2 text-right rounded-md bg-blue-100 m-2'; // Color del texto del usuario
   userMessage.innerHTML = text;
 
   // Agregar el mensaje del usuario a la lista
