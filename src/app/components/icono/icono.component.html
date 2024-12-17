@@ -20,3 +20,29 @@
     </button>
   </div>
 </div>
+<div class="send-whatsapp-container">
+  <h2>Enviar mensaje a WhatsApp</h2>
+  <form (submit)="sendMessage(); $event.preventDefault();">
+    <label for="recipient">Número del destinatario:</label>
+    <input
+      type="text"
+      id="recipient"
+      [(ngModel)]="recipient"
+      name="recipient"
+      placeholder="Ejemplo: 1234567890"
+      required
+    />
+
+    <label for="message">Mensaje:</label>
+    <textarea
+      id="message"
+      [(ngModel)]="message"
+      name="message"
+      placeholder="Escribe tu mensaje aquí"
+      required
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+

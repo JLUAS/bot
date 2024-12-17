@@ -1,4 +1,4 @@
-const socket = io('wss://bot-node-7htf.onrender.com/');
+const socket = io('wss://bot-node-7htf.onrender.com');
 
 socket.on('message', (text) => {
   // Crear elemento para el mensaje del bot
